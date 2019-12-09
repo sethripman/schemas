@@ -1,3 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Validator required fields returns the field 1`] = `"age is required"`;
+
+exports[`Validator requiring fields returns absent fields 1`] = `"age is required"`;

@@ -71,7 +71,6 @@ describe('Validator', () => {
     it('returns null if field is not required', () => {
       const wine = {
         name: 'vinto',
-        age: 20,
         price: '1000 buckaroos'
       };
   
