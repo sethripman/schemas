@@ -47,7 +47,7 @@ describe('Schema tests', () => {
 
     const daMediocreVino = {
       name: 'delicious rose with pineapple and cheddar flavor',
-      age: 'Beware death by drowning, beware the Ides of March!',
+      age: 'Beware death by drowning, beware the Ides of March!!',
       price: 12
     };
   
