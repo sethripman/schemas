@@ -30,7 +30,7 @@ describe('Schema tests', () => {
   
   });
   
-  it('throws error on object not matching schema', () => {
+  it('throws error on input when object does not match schema', () => {
     const schema = new Schema({
       name: {
         type: String,
