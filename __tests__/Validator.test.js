@@ -3,7 +3,7 @@ const Validator = require('../lib/Validator');
 describe('Validator', () => {
   let validator;
 
-  describe('required fields', () => {
+  describe('requiring fields', () => {
     beforeAll(() => {
       validator = new Validator('age', {
         type: Number,
@@ -12,13 +12,15 @@ describe('Validator', () => {
     });
   
     it('returns the field', () => {
-      const dog = {
-        name: 'spot',
-        age: 5,
-        weight: '20 lbs'
+      const wine = {
+        name: 'vinto',
+        age: 20,
+        price: '1000 buckaroos'
       };
   
-      expect(validator.validate(dog)).toEqual(5);
+      expect(validator.validate(wine)).toEqual(20);
     });
+
+    
   });
 });
