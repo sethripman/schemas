@@ -21,6 +21,25 @@ describe('Validator', () => {
       expect(validator.validate(wine)).toEqual(20);
     });
 
-    
+    it('casts field to the inputted type', () => {
+      const wine = {
+        name: 'vinto',
+        age: '20',
+        price: '1000 buckaroos'
+      };
+  
+      expect(validator.validate(wine)).toEqual(20);
+    });
+  
+    it('returns absent fields', () => {
+      const wine = {
+        name: 'vinto',
+        price: '1000 buckaroos'
+      };
+  
+      expect(() => validator.validate(wine)).toThrowErrorMatchingSnapshot();
+    });
   });
+  
+  
 });
