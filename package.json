@@ -8,6 +8,9 @@
     "test:watch": "npm run test -- --watch",
     "lint": "eslint '**/*.js'"
   },
+  "jest": {
+    "testEnvironment": "node"
+  },
   "author": "",
   "license": "ISC",
   "devDependencies": {
