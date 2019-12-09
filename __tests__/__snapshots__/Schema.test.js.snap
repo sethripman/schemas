@@ -1,3 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`Schema tests throws error on input when object does not match schema 1`] = `"invalid schema >> Error: Cannot cast >>Beware death by drowning, beware the Ides of March!!<< to Number"`;
